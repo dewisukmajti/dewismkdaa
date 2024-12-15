@@ -1,12 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>say hello</h1>
-        <h2>Nama saya dewi sukmajati</h2>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #cf95b8;">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="1.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+        Edwiya_Ds
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="benner3.png" class="d-block w-100 img-fluid" alt="Product 1" style="object-fit: cover; width: 100%; max-height: 580px;">
+          <div class="carousel-caption d-block" style="background: none;">
+            <h5>Product 1</h5>
+            <p>Ada sebuah perstrawberry an seperti Dessert, macaron, dll.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="benner2.png" class="d-block w-100 img-fluid" alt="Product 2" style="object-fit: cover; width: 100%; max-height: 580px;">
+          <div class="carousel-caption d-block" style="background: none;">
+            <h5>Product 2</h5>
+            <p>Cake roll rasa tiramisu-strawberry</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="benner1.png" class="d-block w-100 img-fluid" alt="Product 3" style="object-fit: cover; width: 100%; max-height: 580px;">
+          <div class="carousel-caption d-block" style="background: none;">
+            <h5>Product 3</h5>
+            <p>Sama ada dunia percoklatan yaitu Dessert, cookies, dll!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+    <!-- Jumbotron -->
+    <div class="jumbotron text-white" style="background-color: #f8d7e0; padding: 2rem; text-align: center;">
+      <h1>Welcome to Sukmanis Dessert</h1>
+      <p>Jelajahi Koleksi Lengkap Dessert Kami, Mulai dari Kue Kering hingga Cake yang Menggoda.</p>
+    </div>
+
+    <!-- Best Seller Section -->
+      <section class="best-sellers py-5 bg-pink">
+       <div class="container">
+        <h2 class="text-center mb-5">Best Sellers</h2>
+         <div class="row">
+    <!-- Card 1 -->
+       <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="chocolate.jpg" class="card-img-top" alt="Roti Coklat Meluncur">
+          <div class="card-body">
+            <h5 class="card-title">Roti Coklat Meluncur</h5>
+            <p class="card-text">Roti lembut dengan cokelat cair yang meluncur saat digigit.</p>
+            <p class="fw-bold">Rp10.000</p>
+          </div>
+        </div>
+       </div>
+      <!-- Card 2 -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="dessert_tiramisu.jpg" class="card-img-top" alt="Dessert Tiramisu">
+          <div class="card-body">
+            <h5 class="card-title">Dessert Tiramisu</h5>
+            <p class="card-text">Tiramisu klasik dengan lapisan krim mascarpone dan espresso yang kaya rasa.</p>
+            <p class="fw-bold">Rp35.000</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="cookies lotus.jpg" class="card-img-top" alt="Cookies">
+          <div class="card-body">
+            <h5 class="card-title">Cookies</h5>
+            <p class="card-text">Cookies yang renyah dengan rasa manis yang pas di setiap gigitan.</p>
+            <p class="fw-bold">Rp12.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Product Section -->
+<section id="product" class="container mt-5">
+  <h2 class="text-center mb-4">Product</h2>
+  <div class="row">
+    <!-- Product 1 -->
+    <div class="col-md-4">
+      <div class="card" >
+        <img src="macaron.jpg" class="card-img-top" alt="Macaron">
+        <div class="card-body">
+          <h5 class="card-title">Macaron</h5>
+          <p class="card-text">Perpaduan sempurna antara renyah dan lembut dalam setiap gigitan.</p>
+          <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal1">Detail</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="cake_roll.jpg" class="card-img-top" alt="Cake Roll">
+        <div class="card-body">
+          <h5 class="card-title">Cake Roll</h5>
+          <p class="card-text">Kue gulung klasik dengan lapisan krim lezat yang meleleh di mulut.</p>
+          <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal2">Detail</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-md-4">
+      <div class="card" >
+        <img src="cupcakes.jpg" class="card-img-top" alt="Cupcakes">
+        <div class="card-body">
+          <h5 class="card-title">Cupcakes</h5>
+          <p class="card-text">Kombinasi sempurna dari rasa dan keindahan dalam ukuran kecil.</p>
+          <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal3">Detail</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- Product Modals -->
+    <!-- Modal 1 -->
+   <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel1">Macaron Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Pilihan Rasa Favorit: Cokelat, Stroberi, Matcha, Red Velvet, dan Salted Caramel.</p>
+        <p>💰 Harga: Mulai dari Rp10.000/buah. Paket spesial: 6 pcs Rp60.000, 12 pcs Rp120.000.</p>
+        <p>🌟 Keunggulan:</p>
+        <ul>
+          <li>✅ Dibuat dari bahan premium, rasa dijamin mewah!</li>
+          <li>✅ Selalu fresh, cocok untuk segala momen.</li>
+          <li>✅ Cantik banget untuk hadiah atau hantaran.</li>
+        </ul>
+        <p>🎁 Pesan Sekarang!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel2">Cake Roll Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>✨ Varian Rasa: Cokelat, Strawberry, Vanilla, Red Velvet, Matcha, dan Salted Caramel.</p>
+        <p>💰 Harga: Mulai Rp50.000/roll, hemat beli lebih banyak!</p>
+        <p>🌟 Keunggulan:</p>
+        <ul>
+          <li>✅ Bahan premium, tanpa pengawet.</li>
+          <li>✅ Fresh dan tahan hingga 1 minggu di kulkas.</li>
+          <li>✅ Cocok untuk acara spesial atau camilan harian.</li>
+        </ul>
+        <p>🎁 Pesan Sekarang!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel3">Cupcake Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>✨ Varian Rasa: Cokelat, Vanilla, Red Velvet, Matcha, dan Strawberry</p>
+        <p>💰 Harga: Mulai Rp10.000/cupcake, paket 6 pcs mulai Rp60.000.</p>
+        <p>🌟 Keunggulan:</p>
+        <ul>
+          <li>✅ Fresh dan dibuat dengan bahan premium.</li>
+          <li>✅ Topping menarik, bisa custom desain.</li>
+          <li>✅ Awet hingga 1 minggu di kulkas.</li>
+        </ul>
+        <p>🎁 Pesan Sekarang!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- About Section -->
+<section id="about" class="py-5 mt-5" style="background-color: #f8d7e0;">
+  <div class="container">
+    <h2 class="text-center text-dark mb-4">Tentang Kami</h2>
+    <div class="row">
+      <!-- Sejarah Kami -->
+      <div class="col-lg-6">
+        <div class="bg-white p-4 shadow rounded">
+          <h3 class="text-danger mb-3">Sejarah Kami</h3>
+          <p>
+            Toko dessert kami didirikan pada tahun 2020 dengan tujuan untuk menghadirkan kebahagiaan dalam setiap gigitan. Bermula dari kecintaan kami pada dunia kuliner, kami ingin menawarkan pengalaman baru dalam menikmati dessert. Dengan komitmen untuk selalu menggunakan bahan berkualitas tinggi, setiap produk yang kami buat diciptakan dengan penuh perhatian dan dedikasi. Kami berusaha untuk menjaga keaslian rasa dan memberikan pilihan dessert yang tidak hanya lezat, tetapi juga memberikan kenangan manis untuk setiap pelanggan kami. 
+          </p>
+        </div>
+      </div>
+      <!-- Visi & Misi -->
+      <div class="col-lg-6">
+        <div class="bg-white p-4 shadow rounded">
+          <h3 class="text-danger mb-3">Visi & Misi</h3>
+          <ul>
+            <li>Menyediakan produk berkualitas yang bisa dinikmati oleh siapa saja.</li>
+            <li>Menawarkan dessert dengan pilihan rasa yang kreatif.</li>
+            <li>Memberikan kebahagiaan melalui setiap produk yang kami buat.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <!-- Tim Kami -->
+      <div class="col-lg-6">
+        <div class="bg-white p-4 shadow rounded">
+          <h3 class="text-danger mb-3">Tim Kami</h3>
+          <p>
+            Setiap dessert yang kami sajikan dibuat dengan sentuhan tim kreatif yang penuh dedikasi. Dari pastry chef hingga tim dekorasi, mereka semua berperan dalam menciptakan pengalaman manis untuk Anda.
+          </p>
+        </div>
+      </div>
+      <!-- Gambar Tim -->
+      <div class="col-lg-6 text-center">
+        <img src="gambar.jpg" alt="Tim Kami" class="img-fluid rounded shadow-lg">
+      </div>
+    </div>
+  </div>
+</section>
+      
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <!-- Lokasi -->
+      <div class="col-md-6">
+        <h5>Our Location:</h5>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15847.024524909373!2d108.26658867482544!3d-6.799495984221868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f265d85d18283%3A0xae893fb36c6c62d3!2sPinangraja%2C%20Jatiwangi%2C%20Majalengka%20Regency%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1732683856504!5m2!1sen!2sid" 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      
+      <!-- Form Kontak -->
+      <div class="col-md-6">
+        <h5>Contact Form:</h5>
+        <form>
+          <!-- Nama -->
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+            <label for="name">Your Name</label>
+          </div>
+          
+          <!-- Email -->
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+            <label for="email">Your Email</label>
+          </div>
+          
+          <!-- Subjek -->
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="subject" placeholder="Your Subject">
+            <label for="subject">Your Subject</label>
+          </div>
+          
+          <!-- Pesan -->
+          <div class="form-floating mb-3">
+            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          
+          <!-- Tombol Submit -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-light text-black mt-5 p-4">
+  <div class="container text-center">
+    <h5>Informasi Kontak</h5>
+    <p>Email: dewi_sukma123@gmail.com</p>
+    <p>Telepon: (021) 123-4567</p>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="https://www.youtube.com/channel/UCPrrTOYt39wZ_rc0WEELl1g" class="text-black" target="_blank">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+      <a href="https://www.linkedin.com/in/dewi-sukma-jati-053b0a333/" class="text-black" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://www.instagram.com/dwii_skdaa/?hl=en" class="text-black" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
+    <p class="mb-0">&copy; 2024 Edwiya_Ds. Semua Hak Dilindungi.</p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
